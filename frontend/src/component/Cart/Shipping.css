@@ -1,0 +1,113 @@
+.shippingContainer {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.shippingBox {
+  background-color: white;
+  width: 25vw;
+  height: 85vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.shippingHeading {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.66);
+  font: 400 1.5vmax sans-serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+  width: 50%;
+  margin: auto;
+  padding: 1.3vmax;
+}
+
+.shippingForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 2vmax;
+  justify-content: space-evenly;
+  height: 80%;
+  transition: all 0.3s;
+}
+.shippingForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.shippingForm > div > input,
+.shippingForm > div > select {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.26);
+  font: 300 1vmax cursive;
+  outline: none;
+}
+
+.shippingForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.66);
+}
+
+.shippingBtn {
+  border: none;
+  border-radius: 4px;
+  background-color: tomato;
+  color: white;
+  font: 300 1vmax sans-serif;
+  cursor: pointer;
+  padding: 1vmax;
+  transition: all 0.3s;
+  outline: none;
+  margin: 2vmax;
+  width: 100%;
+}
+
+.shippingBtn:hover {
+  background-color: rgb(156, 0, 0);
+}
+
+@media screen and (max-width: 650px) {
+  .shippingBox {
+    width: 80vw;
+    height: 80vh;
+  }
+  .shippingHeading {
+    font: 400 4vw sans-serif;
+    padding: 5vw;
+  }
+  .shippingForm {
+    padding: 4vw;
+  }
+
+  .shippingForm > div {
+    width: 80%;
+  }
+
+  .shippingForm > div > input,
+  .shippingForm > div > select {
+    padding: 2vw 8vw;
+    font: 300 2.5vw cursive;
+  }
+
+  .shippingForm > div > svg {
+    font-size: 4vw;
+    transform: translateX(3vw);
+  }
+  .shippingBtn {
+    font: 300 3vw sans-serif;
+    padding: 2vw;
+    width: 80%;
+  }
+}

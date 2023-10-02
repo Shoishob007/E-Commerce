@@ -1,0 +1,64 @@
+.sidebar {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+}
+
+.sidebar > a:first-child {
+  padding: 0 2rem;
+}
+
+.sidebar > a > img {
+  width: 100%;
+  transition: all 0.5s;
+  width: 125px;
+  height: 125px;
+}
+
+.sidebar > a > img:hover {
+  filter: drop-shadow(0 0 10px tomato);
+}
+
+.sidebar > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  font: 200 1rem sans-serif;
+  padding: 1rem;
+  transition: all 0.3s;
+}
+
+.productOptionSidebar {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  font: 200 1rem sans-serif;
+  padding: 2rem;
+  transition: all 0.3s;
+}
+.sidebar > a:hover {
+  color: tomato;
+  transform: scale(1.1);
+}
+
+.sidebar a > p {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar a > p > svg {
+  margin-right: 0.5rem;
+}
+/* .MuiTypography-root {
+  background-color: #fff;
+} */
+
+@media screen and (max-width: 650px) {
+  .sidebar {
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  .sidebar > a > img:hover {
+    filter: drop-shadow(0 0 4px tomato);
+  }
+}

@@ -1,0 +1,63 @@
+.updateProductForm {
+  margin: 5vmax 0;
+  padding: 3vmax;
+
+  background-color: white;
+}
+
+.updateProductForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.updateProductForm > div > select {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  margin: 2rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  font: 300 1vmax cursive;
+  outline: none;
+}
+
+.updateProductForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#createProductBtn {
+  border: none;
+  background-color: tomato;
+  color: white;
+  font: 300 1vmax sans-serif;
+  width: 100%;
+  cursor: pointer;
+  padding: 0.8vmax;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+#updateProductBtn:hover {
+  background-color: rgba(128, 0, 0, 0.829);
+}
+
+@media screen and (max-width: 650px) {
+  .updateProductForm {
+    padding: 5vmax;
+  }
+
+  .updateProductForm > div > select {
+    padding: 2.5vmax 5vmax;
+    font: 300 2vmax cursive;
+  }
+
+  .updateProductForm > div > svg {
+    font-size: 3vmax;
+  }
+}

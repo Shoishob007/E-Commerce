@@ -1,0 +1,111 @@
+.productsHeading {
+  margin: 2vmax auto;
+  width: 15vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 2vmax;
+  color: rgba(0, 0, 0, 0.68);
+  text-align: center;
+  font: 500 1.5vmax sans-serif;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5vmax;
+  justify-content: center;
+}
+
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin: 6vmax;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.page-item {
+  background-color: white;
+  list-style: none;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.188);
+  padding: 0.8vmax 1.5vmax;
+  transition: all 0.3s;
+}
+.page-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.page-link {
+  text-decoration: none;
+  font: 300 0.8vmax sans-serif;
+  color: rgb(70, 70, 70);
+  transition: all 0.3s;
+}
+
+.page-item:hover {
+  background-color: rgb(220, 220, 220);
+}
+.page-item:hover .page-lonk {
+  color: rgb(70, 70, 70);
+}
+.pageItemActive {
+  background-color: tomato;
+}
+.pageLinkActive {
+  color: white;
+}
+
+.filterBox {
+  width: 10vmax;
+  top: 14vmax;
+  left: 3vmax;
+  position: absolute;
+}
+
+.filterBox > fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.354);
+  margin: 0;
+}
+.filterBox > fieldset > legend {
+  font-size: 1.2vmax;
+}
+
+.categoryBox {
+  padding: 0%;
+}
+.category-link {
+  list-style: none;
+  font: 400 1vmax sans-serif;
+  margin: 0.4vmax;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.category-link:hover {
+  color: tomato;
+}
+
+@media screen and (max-width: 650px) {
+  .filterBox {
+    width: 15vmax;
+    position: static;
+    margin: auto;
+    padding: 3vmax 0;
+  }
+
+  .page-link {
+    font: 300 2vmax sans-serif;
+  }
+  .category-link {
+    font: 300 2vmax sans-serif;
+  }
+  .filterBox > fieldset > legend {
+    font-size: 3vmax;
+  }
+}

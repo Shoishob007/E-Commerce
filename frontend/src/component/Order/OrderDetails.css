@@ -1,0 +1,136 @@
+.orderDetailsPage {
+  background-color: white;
+}
+
+.orderDetailsContainer > h1 {
+  font: 300 2vmax sans-serif;
+  margin: 2vmax 0;
+  margin-top: 0;
+  color: tomato;
+  border-bottom: 1px dashed tomato;
+  width: 40%;
+}
+
+.orderDetailsContainer {
+  padding: 5vmax;
+  padding-bottom: 0%;
+}
+
+.orderDetailsContainer > p {
+  font: 400 1.7vmax sans-serif;
+}
+
+.orderDetailsContainerBox,
+.orderDetailsCartItemsContainer {
+  margin: 0 2vmax;
+}
+
+.subOrderDetailsContainerBox {
+  display: flex;
+  margin: 1vmax 0;
+  align-items: center;
+}
+
+.subOrderDetailsContainerBox > p {
+  font: 400 1.2vmax sans-serif;
+  color: black;
+  margin: 0;
+}
+
+.subOrderDetailsContainerBox1 > p {
+  font: 400 1.3vmax sans-serif;
+  font-weight: bold;
+}
+.subOrderDetailsContainerBox > span {
+  font: 200 1.2vmax sans-serif;
+  color: #575757;
+  margin: 0.5vmax;
+}
+
+.orderDetailsCartItems > p {
+  font: 400 1.8vmax sans-serif;
+}
+
+.orderDetailsCartItems {
+  padding: 2vmax 8vmax;
+  border-top: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+.subOrderDetailsCartItemsContainer {
+  display: flex;
+  font: 400 1.2vmax sans-serif;
+  align-items: center;
+  margin: 2vmax 0;
+}
+
+.subOrderDetailsCartItemsContainer > img {
+  width: 3vmax;
+}
+
+.subOrderDetailsCartItemsContainer > a {
+  color: #575757;
+  margin: 0 2vmax;
+  width: 60%;
+  text-decoration: none;
+}
+
+.subOrderDetailsCartItemsContainer > span {
+  font: 200 1.2vmax sans-serif;
+  color: #5e5e5e;
+}
+
+@media screen and (max-width: 650px) {
+  .orderDetailsPage {
+    padding: 2vmax;
+  }
+
+  .orderDetailsContainer > h1 {
+    font: 400 3vmax sans-serif;
+    width: 100%;
+  }
+
+  .orderDetailsContainer > p {
+    font: 400 4vw sans-serif;
+  }
+
+  .subOrderDetailsContainerBox {
+    margin: 5vw 0;
+  }
+
+  .subOrderDetailsContainerBox > p {
+    font: 400 3vw sans-serif;
+  }
+  .subOrderDetailsContainerBox1 > p {
+    font: 400 3vw sans-serif;
+    font-weight: bold;
+  }
+  .subOrderDetailsContainerBox > span {
+    margin: 2vmax 0;
+    font: 200 3vw sans-serif;
+  }
+
+  .orderDetailsCartItems {
+    padding: 2vmax 0;
+  }
+  .orderDetailsCartItems > p {
+    font: 400 4vw sans-serif;
+  }
+
+  .subOrderDetailsCartItemsContainer {
+    font: 400 3vw sans-serif;
+    margin: 3vw 0;
+  }
+
+  .subOrderDetailsCartItemsContainer > img {
+    width: 8vw;
+  }
+
+  .subOrderDetailsCartItemsContainer > a {
+    margin: 2vw;
+    width: 30%;
+  }
+
+  .subOrderDetailsCartItemsContainer > span {
+    font: 200 3vw sans-serif;
+  }
+}

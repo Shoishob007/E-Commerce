@@ -1,0 +1,141 @@
+.banner {
+  background-image: url(../../images/Home_background.jpg);
+  background-size: 100% 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  color: black;
+  margin: auto;
+}
+
+.banner h1 {
+  margin: 3vmax 8vmax;
+  font: 600 2vmax sans-serif;
+}
+
+.banner p {
+  font: 600 1.5vmax sans-serif;
+  margin: 5vmax 14vmax;
+}
+.banner > a {
+  margin: 2vmax 20vmax;
+}
+
+.banner > a > button {
+  cursor: pointer;
+  background-color: #ffd674;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 1vmax;
+  transition: all 0.5s;
+  width: 9vmax;
+  font: 500 1vmax sans-serif;
+}
+.banner > a > button:hover {
+  color: black;
+  background-color: tomato;
+}
+
+.banner::after {
+  content: "";
+  width: 100vw;
+  height: 30vh;
+  background-color: #ffffff;
+  max-width: 100%;
+  clip-path: polygon(50% 100%, 100% 70%, 100% 100%, 0 100%, 0 70%);
+  margin: auto;
+}
+
+.homeHeading {
+  text-align: center;
+  margin: 3vmax auto;
+  font-family: sans-serif;
+  width: 20vmax;
+  font-size: 1.4vmax;
+  border-bottom: 2px solid rgba(21, 21, 21, 0.5);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.container {
+  display: flex;
+  margin: 1vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  padding-bottom: 2vmax;
+}
+
+.productCard {
+  height: 80%;
+  width: 14vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.3s;
+  padding-bottom: 1vmax;
+}
+
+.productCard > img {
+  width: 14vmax;
+}
+
+.productCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.productCardSpan {
+  margin: 0.5vmax;
+  font: 300 0.7vmax sans-serif;
+}
+
+.productCard > p {
+  font-family: sans-serif;
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+}
+
+.productCard > span {
+  margin: 0.5vmax 0.5vmax;
+  color: tomato;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1vmax;
+}
+
+.productCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.3);
+  transform: translateY(-1vmax);
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 60vh;
+    align-items: center;
+  }
+  .banner::after {
+    content: "";
+    height: 40vh;
+  }
+  .productCard > p {
+    font-size: 1.7vmax;
+  }
+  .productCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+  .productCard > span {
+    font-size: 1.5vmax;
+  }
+  .productCardSpan {
+    margin: 0 0.5vmax;
+    font: 300 1vmax sans-serif;
+  }
+}
